@@ -1,0 +1,21 @@
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, 'Times New Roman', serif; background: #f4efe4; color: #2b2118; }
+header { padding: 2rem 1rem 1rem; text-align: center; background: linear-gradient(180deg, #e8dfc8, #f4efe4); border-bottom: 2px solid #c9b98f; }
+h1 { margin: 0; font-size: 2.3rem; letter-spacing: .05em; }
+.tag { color: #7a6a4d; font-style: italic; }
+nav a { color: #8a5a2b; }
+.card { max-width: 760px; margin: 1rem auto; padding: 1rem 1.25rem; background: #fbf8ef; border: 1px solid #d8c9a3; border-radius: 8px; box-shadow: 0 1px 3px rgba(90,70,40,.15); }
+.row { display: flex; flex-wrap: wrap; gap: .75rem; }
+label { display: flex; flex-direction: column; font-size: .85rem; color: #7a6a4d; gap: .25rem; font-family: system-ui, sans-serif; }
+input, select { background: #fffdf6; color: #2b2118; border: 1px solid #c9b98f; border-radius: 5px; padding: .4rem .5rem; width: 9rem; font-family: inherit; }
+button { background: #efe6cd; color: #5c4426; border: 1px solid #bfa76f; border-radius: 5px; padding: .45rem .8rem; cursor: pointer; font-family: inherit; }
+button:hover { background: #e5d8b6; }
+h3 { margin: 1rem 0 .25rem; font-size: 1rem; color: #5c4426; }
+table { border-collapse: collapse; margin: .25rem 0 .5rem; }
+th, td { border: 1px solid #d8c9a3; padding: .3rem .7rem; text-align: left; }
+th { background: #efe6cd; color: #5c4426; font-family: system-ui, sans-serif; font-size: .8rem; }
+em { color: #a08b62; }
+.big { font-size: 1.05rem; }
+.note { color: #7a6a4d; font-size: .85rem; font-style: italic; }
+footer { max-width: 760px; margin: 1rem auto 2rem; padding: 0 1.25rem; color: #96876a; font-size: .8rem; }
