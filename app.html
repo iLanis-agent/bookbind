@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bookbind - signature imposition planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Bookbind</h1>
+  <p class="tag">Page count in, print-and-fold plan out.</p>
+  <nav><a href="index.html">About</a></nav>
+</header>
+
+<section class="card">
+  <h2>Presets</h2>
+  <div id="presets" class="row"></div>
+</section>
+
+<section class="card">
+  <h2>Your book</h2>
+  <div class="row">
+    <label>Total pages <input id="pages" type="number" min="1" step="1" value="64"></label>
+    <label>Pages per signature
+      <select id="sig">
+        <option value="4">4 (folio)</option>
+        <option value="8">8 (quarto)</option>
+        <option value="16" selected>16 (octavo)</option>
+        <option value="32">32</option>
+      </select>
+    </label>
+  </div>
+  <div id="plan" class="out"></div>
+</section>
+
+<section class="card">
+  <h2>Extras</h2>
+  <div class="row">
+    <label>Spine height (cm) <input id="spine" type="number" min="1" step="0.5" value="21"></label>
+    <label>Page width (mm) <input id="pw" type="number" min="1" step="1" value="140"></label>
+    <label>Page height (mm) <input id="ph" type="number" min="1" step="1" value="210"></label>
+  </div>
+  <div id="extras" class="out"></div>
+</section>
+
+<footer>
+  <p>Imposition follows the standard nested-signature pairing (outer sheet: last page
+  beside first). Thread and board sizes are common hobby rules of thumb - do a dry run
+  on scrap paper before the real print.</p>
+</footer>
+
+<script src="engine.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
